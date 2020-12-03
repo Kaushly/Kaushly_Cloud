@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="center" xmlns="http://javafx.com/javafx/10.0.2-internal"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="controllers.Registration">
+
+    <Text text="Придумайте логин: ">
+        <VBox.margin>
+            <Insets bottom="5.0" top="5.0" />
+        </VBox.margin></Text>
+    <TextField fx:id="addLogin" accessibleRole="TEXT">
+        <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+        </VBox.margin></TextField>
+    <Text text="Введите пароль: ">
+        <VBox.margin>
+            <Insets bottom="5.0" top="5.0" />
+        </VBox.margin></Text>
+    <TextField fx:id="addPassword" accessibleRole="PASSWORD_FIELD">
+        <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+        </VBox.margin></TextField>
+    <Button fx:id="enter" alignment="TOP_CENTER" focusTraversable="false" text="Зарегестрироваться и войти" HBox.hgrow="ALWAYS" onAction="#btnEnterCloudAction">
+        <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+        </VBox.margin></Button>
+</VBox>

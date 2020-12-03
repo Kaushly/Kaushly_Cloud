@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="center" xmlns="http://javafx.com/javafx/10.0.2-internal"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="controllers.Authorization">
+
+
+    <Text text="Login: " VBox.vgrow="ALWAYS">
+      <VBox.margin>
+         <Insets bottom="5.0" top="5.0" />
+      </VBox.margin></Text>
+    <TextField fx:id="login" accessibleRole="TEXT" VBox.vgrow="ALWAYS">
+      <VBox.margin>
+         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+      </VBox.margin></TextField>
+    <Text text="Password: ">
+      <VBox.margin>
+         <Insets bottom="5.0" top="5.0" />
+      </VBox.margin></Text>
+    <TextField fx:id="password" accessibleRole="PASSWORD_FIELD" VBox.vgrow="ALWAYS">
+      <VBox.margin>
+         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+      </VBox.margin></TextField>
+
+    <Button fx:id="open" alignment="TOP_CENTER" focusTraversable="false" onAction="#btnEnterCloudAction" text="Войти" HBox.hgrow="ALWAYS">
+
+        <HBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+        </HBox.margin>
+      <VBox.margin>
+         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+      </VBox.margin>
+    </Button>
+    <Button fx:id="reg" onAction="#btnRegAction" text="Зарегестрироваться">
+      <VBox.margin>
+         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+      </VBox.margin></Button>
+
+</VBox>

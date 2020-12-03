@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.geometry.Insets?>
+
+<?import javafx.scene.control.TextField?>
+
+<VBox fx:controller="controllers.Controller"
+      xmlns:fx="http://javafx.com/fxml" alignment="center">
+    <MenuBar>
+        <Menu text="Файл">
+            <MenuItem text="Выйти из программы" onAction="#btnExitAction"/>
+        </Menu>
+    </MenuBar>
+
+    <HBox spacing="5">
+        <Button text="Домой" HBox.hgrow="ALWAYS" onAction="#btnGoHomeAction"/>
+        <Button text="Вверх" HBox.hgrow="ALWAYS" onAction="#btnPathUpAction"/>
+        <TextField fx:id="pathField" editable="false"  HBox.hgrow="ALWAYS"/>
+    </HBox>
+
+    <TableView fx:id="filesTables" VBox.vgrow="ALWAYS"/>
+
+    <HBox spacing="5">
+        <Button text="Загрузить файл ..." focusTraversable="false" maxWidth="Infinity" HBox.hgrow="ALWAYS" onAction="#btnUploadAction"/>
+        <Button text="Скачать файл ..." focusTraversable="false" maxWidth="Infinity" HBox.hgrow="ALWAYS" onAction="#btnDownloadAction"/>
+        <Button text="Переместить файл ..." focusTraversable="false" maxWidth="Infinity" HBox.hgrow="ALWAYS" onAction="#btnMoveAction"/>
+        <Button text="Удалить файл" focusTraversable="false" maxWidth="Infinity" HBox.hgrow="ALWAYS" onAction="#btnDeleteAction"/>
+        <Button text="Отключиться от сервера" focusTraversable="false" maxWidth="Infinity" HBox.hgrow="ALWAYS" onAction="#btnExitAction"/>
+        <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+        </padding>
+    </HBox>
+</VBox>
